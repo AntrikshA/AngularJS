@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+
+	<!-- INCLUDE APPLICATION SPECIFIC CSS AND JAVASCRIPT -->
+	<script type="text/javascript" src="js/Identifiers/app.js"></script>
+	<script type="text/javascript" src="js/Identifiers/controllers/mainController.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+</head>
+<body ng-app="app" ng-controller="MainController as main">
+	<div class="container">
+        
+	    <h3>Add a new Person</h3>
+		<form name="main.addForm" class="form" ng-submit="main.addShow()">
+		<table>
+			<tr>
+			<div class="form-group">
+	            <td><label>Name</label></td>
+	            <td><input type="text" class="form-control" ng-model="main.new.name" required /></div>
+	        </div>
+	        </tr>
+	        <tr>
+	        <div class="form-group">
+	            <td><label>Email</label></td>
+	            <td><input type="email" class="form-control" name="email" required ng-model="main.new.email" /></td>
+	        </div>
+	        </tr>
+	        <tr>
+	        <div class="form-group">
+	            <td><label>Username</label></td>
+	            <td><input type="text" class="form-control" ng-model="main.new.uname" required /></td>
+	        </div>
+	        </tr>
+	        <tr>
+	        <div class="form-group">
+	            <td><label>Password</label></td>
+	            <td><input type="text" class="form-control" ng-model="main.new.uname" required /></td>
+	        </div>
+	        </tr>
+	        <tr>
+	        <div class="form-group">
+	            <td><label>Date of Birth</label></td>
+	            <td><input style="width:45px" type="number" min="1" max="31" class="form-control" ng-model="main.new.date" required />
+	            <input style="width:45px" type="number" min="1" max="12" class="form-control" ng-model="main.new.month" required />
+	            <input style="width:80px" type="number" min="1960" max="2005" class="form-control" ng-model="main.new.year" required /></td>
+	        </div>
+	        </tr>
+	    </table>
+	        <div class="col-xs-6">
+	            <button class="btn btn-success pull-centre"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+	        </div>
+	        </div>
+	        
+ 	    </form>
+
+	</div>
+
+
+</body>
+</html>
