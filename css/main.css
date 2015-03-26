@@ -131,3 +131,29 @@ h1, h2, h3 {
     opacity: 0;
     margin-top: -20px;
 }
+
+.bin {
+  min-height: 150px;
+  min-width: 150px;
+  float: left;
+  border: 1px solid red;
+  padding: 20px;
+}
+.item {
+  min-height: 50px;
+  min-width: 50px;
+  background: blue;
+}
+
+.item dragend{
+    min-height: 20px;
+    min-height: 20px;
+    background:blue;
+}
+
+.drag {
+  opacity: 0.5;
+}
+.over {
+  background: red;
+}

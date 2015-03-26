@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+
+	<!-- INCLUDE APPLICATION SPECIFIC CSS AND JAVASCRIPT -->
+	<script type="text/javascript" src="js/identifiers/app.js"></script>
+	
+	<script src="js/identifiers/controllers/DragDropCtrl.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+</head>
+
+	<body ng-app="dragDrop" ng-controller="DragDropCtrl" >
+		
+
+		<div class="bin" droppable drop="handleDrop()" >Drop here</div>
+
+		<div class="bin" droppable drop="handleDrop()" >Take from here
+		<div id="2" class="item" style="float:right" draggable></div></div>
+		
+	</body>
+</html>
